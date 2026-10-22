@@ -18,6 +18,7 @@
 </head>
 <body>
 <style>
+@font-face { font-family: "Plain Digits"; src: local("Helvetica Neue"), local("HelveticaNeue"), local("Arial"), local("Roboto"), local("Segoe UI"); unicode-range: U+0030-0039; }
 /* Layout: one calm column on a grey "worksheet" ground; the four logo tiles carry all the colour */
 :root {
   --bg: #e9e9ec;
@@ -32,7 +33,7 @@
   --green: #22c06e;
   --tile-ink: #1d1c22;
   --display: "Chakra Petch", "Arial Narrow", system-ui, sans-serif;
-  --body: "Atkinson Hyperlegible", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --body: "Plain Digits", "Atkinson Hyperlegible", system-ui, -apple-system, "Segoe UI", sans-serif;
 }
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
