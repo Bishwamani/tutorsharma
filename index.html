@@ -1,0 +1,316 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tutor Sharma | Maths &amp; Accounting Tutor in Alice Springs</title>
+<meta name="description" content="One-on-one maths and basic accounting tutoring for students up to Year 10. In person in Alice Springs, NT, or online. Call 0478 132 903.">
+<meta property="og:title" content="Tutor Sharma – Maths &amp; Accounting Tutor, Alice Springs">
+<meta property="og:description" content="Maths and basic accounting tutoring up to Year 10. In person in Alice Springs or online.">
+<meta property="og:type" content="website">
+<link rel="icon" href="logo.png" type="image/png">
+<link rel="apple-touch-icon" href="logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&family=Atkinson+Hyperlegible:wght@400;700&display=swap">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "EducationalOrganization", "name": "Tutor Sharma", "description": "Maths and basic accounting tutoring for students up to Year 10, in person in Alice Springs or online.", "telephone": "+61 478 132 903", "email": "bishp2000@gmail.com", "areaServed": {"@type": "City", "name": "Alice Springs, NT, Australia"}}</script>
+</head>
+<body>
+<style>
+/* Layout: one calm column on a grey "worksheet" ground; the four logo tiles carry all the colour */
+:root {
+  --bg: #e9e9ec;
+  --paper: #f7f7f9;
+  --fg: #1d1c22;
+  --muted: #5a5866;
+  --line: #d2d1d8;
+  --red: #c8202f;
+  --purple: #6a35e8;
+  --orange: #f2875c;
+  --yellow: #f6dc4a;
+  --green: #22c06e;
+  --tile-ink: #1d1c22;
+  --display: "Chakra Petch", "Arial Narrow", system-ui, sans-serif;
+  --body: "Atkinson Hyperlegible", system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #18171c; --paper: #222128; --fg: #ededf1; --muted: #a6a4b2; --line: #34333c;
+    --red: #ff6b74; --purple: #8a62ff; --green: #2fcf7c;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #18171c; --paper: #222128; --fg: #ededf1; --muted: #a6a4b2; --line: #34333c;
+  --red: #ff6b74; --purple: #8a62ff; --green: #2fcf7c;
+  color-scheme: dark;
+}
+
+* { box-sizing: border-box; }
+body {
+  background: var(--bg); color: var(--fg);
+  font-family: var(--body); font-size: 1.0625rem; line-height: 1.6;
+  margin: 0; padding-inline: 16px; padding-block: 0;
+}
+.wrap { max-width: 920px; margin: 0 auto; }
+h1, h2, h3 { font-family: var(--display); line-height: 1.15; text-wrap: balance; margin: 0; }
+h2 { font-size: clamp(1.5rem, 4vw, 2rem); letter-spacing: 0.02em; }
+h3 { font-size: 1.15rem; letter-spacing: 0.02em; }
+p { margin: 0; }
+a { color: inherit; }
+:focus-visible { outline: 3px solid var(--purple); outline-offset: 3px; border-radius: 4px; }
+
+.top { display: flex; justify-content: space-between; align-items: center; gap: 12px; padding-block: 18px; flex-wrap: wrap; }
+.brand { display: flex; align-items: center; gap: 10px; font-family: var(--display); font-weight: 700; letter-spacing: 0.08em; font-size: 1.05rem; text-decoration: none; }
+.nav { display: flex; gap: 18px; flex-wrap: wrap; font-size: 0.95rem; }
+.nav a { text-decoration: none; color: var(--muted); }
+.nav a:hover { color: var(--fg); }
+
+.mark { display: grid; grid-template-columns: 1fr 1fr; gap: 14%; position: relative; aspect-ratio: 1; max-width: 100%; }
+.mark span { display: grid; place-items: center; font-family: var(--display); font-weight: 700; color: var(--tile-ink); line-height: 1; }
+.mark .t1 { background: var(--purple); }
+.mark .t2 { background: var(--orange); }
+.mark .t3 { background: var(--yellow); }
+.mark .t4 { background: var(--green); }
+.mark .x { position: absolute; inset: 0; display: grid; place-items: center; color: var(--fg); background: none; }
+.mark.sm { width: 30px; }
+.mark.sm span { font-size: 0.7rem; }
+.mark.lg { width: min(200px, 46vw); }
+.mark.lg span { font-size: clamp(1.6rem, 6vw, 2.6rem); }
+.mark.lg .x { font-size: clamp(1.4rem, 5vw, 2.2rem); }
+
+.hero { display: grid; grid-template-columns: 1fr auto; gap: 32px; align-items: center; padding-block: 40px 56px; }
+.hero > div { min-width: 0; }
+.wordmark { font-size: clamp(2.6rem, 9vw, 4.6rem); letter-spacing: 0.06em; font-weight: 700; }
+.tagline { margin-top: 14px; color: var(--red); font-family: var(--display); font-weight: 700; text-transform: uppercase; letter-spacing: 0.18em; font-size: clamp(0.85rem, 2.4vw, 1.05rem); }
+.lede { margin-top: 20px; max-width: 34em; color: var(--muted); font-size: 1.1rem; }
+.cta { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 26px; }
+.btn { display: inline-flex; align-items: center; gap: 8px; padding: 12px 20px; border-radius: 6px; text-decoration: none; border: 2px solid var(--fg); cursor: pointer; font: inherit; font-weight: 700; }
+.btn.primary { background: var(--fg); color: var(--bg); }
+.btn.ghost { background: transparent; color: var(--fg); }
+
+section { padding-block: 48px; border-top: 1px solid var(--line); }
+.sec-head { display: flex; flex-direction: column; gap: 8px; margin-bottom: 28px; }
+.sec-head p { color: var(--muted); max-width: 40em; }
+
+.subjects { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; }
+.subj { background: var(--paper); border: 1px solid var(--line); border-radius: 8px; padding: 22px; display: flex; flex-direction: column; gap: 12px; min-width: 0; }
+.subj .head { display: flex; align-items: center; gap: 12px; }
+.chip { width: 34px; height: 34px; flex: none; display: grid; place-items: center; font-family: var(--display); font-weight: 700; color: var(--tile-ink); border-radius: 3px; }
+.years { font-size: 0.85rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.08em; }
+.subj ul { margin: 0; padding-left: 1.1em; display: flex; flex-direction: column; gap: 4px; }
+.subj li::marker { color: var(--muted); }
+
+.ways { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 28px; }
+.way { display: flex; flex-direction: column; gap: 8px; min-width: 0; }
+.way h3 { display: flex; align-items: center; gap: 10px; }
+.dot { width: 12px; height: 12px; border-radius: 2px; flex: none; }
+.way p { color: var(--muted); }
+
+.about { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; }
+.about > * { min-width: 0; }
+.about p + p { margin-top: 12px; }
+.creds { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; }
+.creds li { padding-block: 12px; border-bottom: 1px solid var(--line); display: flex; flex-direction: column; }
+.creds li:first-child { border-top: 1px solid var(--line); }
+.creds span { color: var(--muted); font-size: 0.95rem; }
+
+.faq details { border-bottom: 1px solid var(--line); padding-block: 14px; }
+.faq details:first-child { border-top: 1px solid var(--line); }
+.faq summary { cursor: pointer; font-weight: 700; list-style: none; display: flex; justify-content: space-between; gap: 16px; }
+.faq summary::-webkit-details-marker { display: none; }
+.faq summary::after { content: "+"; font-family: var(--display); color: var(--muted); }
+.faq details[open] summary::after { content: "−"; }
+.faq details p { margin-top: 8px; color: var(--muted); max-width: 40em; }
+
+.contact { background: var(--paper); border: 2px solid var(--fg); border-radius: 10px; padding: clamp(22px, 5vw, 40px); display: flex; flex-direction: column; gap: 14px; }
+.c-row { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; }
+.c-val { font-family: var(--display); font-weight: 700; font-size: clamp(1.1rem, 4.4vw, 1.6rem); word-break: break-all; text-decoration: none; }
+.copy-msg { font-size: 0.9rem; color: var(--green); min-height: 1.4em; }
+.include { color: var(--muted); }
+.include ul { margin: 8px 0 0; padding-left: 1.1em; }
+
+footer { padding-block: 32px 40px; color: var(--muted); font-size: 0.9rem; display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; border-top: 1px solid var(--line); margin-top: 48px; }
+
+@media (max-width: 640px) {
+  .hero { grid-template-columns: 1fr; padding-block: 24px 40px; }
+  .hero .mark.lg { order: -1; width: 120px; }
+  .about { grid-template-columns: 1fr; }
+  .nav { display: none; }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .mark.lg span { transition: transform .25s ease; }
+  .mark.lg:hover .t1 { transform: translate(-4px,-4px); }
+  .mark.lg:hover .t2 { transform: translate(4px,-4px); }
+  .mark.lg:hover .t3 { transform: translate(-4px,4px); }
+  .mark.lg:hover .t4 { transform: translate(4px,4px); }
+}
+</style>
+
+<div class="wrap">
+  <header class="top">
+    <a class="brand" href="#top" aria-label="Tutor Sharma home">
+      <span class="mark sm" aria-hidden="true"><span class="t1">=</span><span class="t2">−</span><span class="t3">+</span><span class="t4">/</span><span class="x">×</span></span>
+      TUTOR SHARMA
+    </a>
+    <nav class="nav" aria-label="Sections">
+      <a href="#subjects">Subjects</a>
+      <a href="#how">How it works</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <div class="hero">
+      <div>
+        <h1 class="wordmark">TUTOR SHARMA</h1>
+        <p class="tagline">“Maths and Accounting – sorted, no worries!”</p>
+        <p class="lede">One-on-one maths and basic accounting tutoring for students up to Year 10. In person in Alice Springs, or online from anywhere.</p>
+        <div class="cta">
+          <a class="btn primary" href="#contact">Book a lesson</a>
+          <a class="btn ghost" href="#subjects">See subjects</a>
+        </div>
+      </div>
+      <div class="mark lg" aria-hidden="true"><span class="t1">=</span><span class="t2">−</span><span class="t3">+</span><span class="t4">/</span><span class="x">×</span></div>
+    </div>
+
+    <section id="subjects">
+      <div class="sec-head">
+        <h2>Subjects</h2>
+        <p>Lessons follow the Australian Curriculum that NT schools teach, and are built around what your child is doing in class.</p>
+      </div>
+      <div class="subjects">
+        <article class="subj">
+          <div class="head"><span class="chip" style="background:var(--purple)">+</span><div><h3>Maths</h3><div class="years">Up to Year 10</div></div></div>
+          <ul>
+            <li>Number, times tables and mental maths</li>
+            <li>Fractions, decimals and percentages</li>
+            <li>Algebra and equations</li>
+            <li>Measurement and geometry</li>
+            <li>Statistics and probability</li>
+            <li>Homework help and test prep</li>
+          </ul>
+        </article>
+        <article class="subj">
+          <div class="head"><span class="chip" style="background:var(--green)">=</span><div><h3>Basic Accounting</h3><div class="years">Money &amp; business skills</div></div></div>
+          <ul>
+            <li>Budgeting, saving and spending</li>
+            <li>Income, expenses and profit</li>
+            <li>Simple bookkeeping and records</li>
+            <li>Reading a basic financial statement</li>
+            <li>A head start for senior Accounting in Year 11</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="how">
+      <div class="sec-head"><h2>How it works</h2></div>
+      <div class="ways">
+        <div class="way">
+          <h3><span class="dot" style="background:var(--purple)"></span>In person</h3>
+          <p>Face-to-face lessons in Alice Springs. Bring your textbook, homework or the topic you're stuck on.</p>
+        </div>
+        <div class="way">
+          <h3><span class="dot" style="background:var(--yellow)"></span>Online</h3>
+          <p>Live lessons over video call, with a shared screen for working through problems together.</p>
+        </div>
+        <div class="way">
+          <h3><span class="dot" style="background:var(--green)"></span>Pricing</h3>
+          <p>Contact for pricing. Rates depend on the year level and how often you'd like lessons.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="about">
+        <div>
+          <h2>About your tutor</h2>
+          <p style="margin-top:16px">I have a background in finance and data, and I enjoy helping students get comfortable with numbers. Lessons are patient and step by step, so students understand the method instead of just memorising answers.</p>
+          <p>I've also taught English test preparation, so I'm used to explaining things clearly and adjusting to how each student learns.</p>
+        </div>
+        <ul class="creds">
+          <li><b>Master of Finance</b><span>Tribhuvan University, Nepal</span></li>
+          <li><b>Master of IT (Data Analytics)</b><span>Kaplan Business School, Australia</span></li>
+          <li><b>Work in banking, finance and inventory</b><span>Including account reconciliation and supplier payments</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="faq">
+      <div class="sec-head"><h2>Questions</h2></div>
+      <div class="faq">
+        <details>
+          <summary>Which year levels do you teach?</summary>
+          <p>Maths and basic accounting for students up to Year 10.</p>
+        </details>
+        <details>
+          <summary>Can I choose between in person and online?</summary>
+          <p>Yes. You can do lessons in person in Alice Springs, online, or a mix of both.</p>
+        </details>
+        <details>
+          <summary>What should we bring to the first lesson?</summary>
+          <p>The student's textbook, recent homework or test results, and any topics they're finding hard. That helps me plan lessons around what they actually need.</p>
+        </details>
+        <details>
+          <summary>How much do lessons cost?</summary>
+          <p>Call, text or email with the year level and subject, and I'll get back to you with rates and available times.</p>
+        </details>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="contact">
+        <h2>Book a lesson</h2>
+        <div class="c-row">
+          <a class="c-val" id="phone" href="tel:+61478132903">0478 132 903</a>
+          <button class="btn ghost copy" data-target="phone" data-label="Number" type="button">Copy number</button>
+        </div>
+        <div class="c-row">
+          <a class="c-val" id="email" href="mailto:bishp2000@gmail.com">bishp2000@gmail.com</a>
+          <button class="btn ghost copy" data-target="email" data-label="Email" type="button">Copy email</button>
+        </div>
+        <div class="copy-msg" id="copy-msg" aria-live="polite"></div>
+        <div class="include">
+          Call, text or email. Please include:
+          <ul>
+            <li>The student's year level and subject</li>
+            <li>In person or online</li>
+            <li>Days and times that suit you</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span>Tutor Sharma · Alice Springs, NT &amp; online</span>
+    <span>Maths &amp; basic accounting · up to Year 10</span>
+  </footer>
+</div>
+
+<script>
+(function () {
+  var msg = document.getElementById('copy-msg');
+  function selectEl(el) {
+    var r = document.createRange(); r.selectNodeContents(el);
+    var s = window.getSelection(); s.removeAllRanges(); s.addRange(r);
+  }
+  document.querySelectorAll('.copy').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var el = document.getElementById(btn.dataset.target);
+      var label = btn.dataset.label;
+      var fallback = function () { selectEl(el); msg.textContent = label + ' selected. Copy it from here.'; };
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(el.textContent.trim()).then(function () {
+          msg.textContent = label + ' copied.';
+        }, fallback);
+      } else { fallback(); }
+    });
+  });
+})();
+</script>
+
+</body>
+</html>
