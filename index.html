@@ -139,6 +139,12 @@ section + section { border-top: 1px solid var(--line); }
 .dot { width: 12px; height: 12px; border-radius: 2px; flex: none; }
 .opt p { color: var(--muted); font-size: 0.96rem; }
 
+.fees { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+.fee { background: var(--paper); border: 1px solid var(--line); border-radius: 8px; padding: 22px; display: flex; flex-direction: column; gap: 10px; min-width: 0; }
+.fee .tag { align-self: flex-start; font-size: 0.78rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; padding: 3px 8px; border-radius: 3px; color: var(--tile-ink); }
+.fee p { color: var(--muted); font-size: 0.97rem; }
+.fee ul { margin: 0; padding-left: 1.1em; color: var(--muted); font-size: 0.97rem; display: flex; flex-direction: column; gap: 4px; }
+.fee-note { margin-top: 18px; color: var(--muted); font-size: 0.92rem; }
 .about { display: grid; grid-template-columns: 1.2fr 1fr; gap: 40px; }
 .about > * { min-width: 0; }
 .about p { color: var(--muted); }
@@ -180,7 +186,7 @@ footer { padding-block: 32px 40px; color: var(--muted); font-size: 0.9rem; displ
   .trust { grid-template-columns: 1fr 1fr; }
   .trust li:nth-child(3) { border-left: 0; }
   .trust li:nth-child(n+3) { border-top: 1px solid var(--line); }
-  .steps, .options { grid-template-columns: 1fr; }
+  .steps, .options, .fees { grid-template-columns: 1fr; }
   .about, .contact { grid-template-columns: 1fr; }
   .nav a:not(.call) { display: none; }
   body { padding-bottom: calc(72px + env(safe-area-inset-bottom, 0px)); }
@@ -198,6 +204,7 @@ footer { padding-block: 32px 40px; color: var(--muted); font-size: 0.9rem; displ
     <nav class="nav" aria-label="Sections">
       <a href="#subjects">Subjects</a>
       <a href="#how">How it works</a>
+      <a href="#fees">Fees</a>
       <a href="#about">About</a>
       <a href="#contact">Contact</a>
       <a class="call" href="tel:+61478132903">0478 132 903</a>
@@ -278,7 +285,42 @@ footer { padding-block: 32px 40px; color: var(--muted); font-size: 0.9rem; displ
       <div class="options">
         <div class="opt"><h3><span class="dot" style="background:var(--purple)"></span>In person</h3><p>Face-to-face lessons in Alice Springs.</p></div>
         <div class="opt"><h3><span class="dot" style="background:var(--yellow)"></span>Online</h3><p>Live video lessons with a shared screen for working through problems.</p></div>
-        <div class="opt"><h3><span class="dot" style="background:var(--green)"></span>Pricing</h3><p>Contact for pricing. Rates depend on year level and how often you'd like lessons.</p></div>
+        <div class="opt"><h3><span class="dot" style="background:var(--green)"></span>Pricing</h3><p>Contact for pricing. Lessons are paid in advance. <a href="#fees">See fees and payment</a>.</p></div>
+      </div>
+    </section>
+
+    <section id="fees">
+      <div class="sec-head">
+        <p class="eyebrow">Fees &amp; payment</p>
+        <h2>Simple, upfront payment</h2>
+        <p>No contracts or lock-in. Lessons are booked and paid in advance, so your child's time slot is held for them.</p>
+      </div>
+      <div class="fees">
+        <div class="fee">
+          <span class="tag" style="background:var(--purple);color:#fff">Rates</span>
+          <h3>Contact for pricing</h3>
+          <p>Rates depend on the year level and how often you'd like lessons. Call or text and I'll send you the details.</p>
+        </div>
+        <div class="fee">
+          <span class="tag" style="background:var(--yellow)">Payment</span>
+          <h3>Pay before the lesson</h3>
+          <ul>
+            <li>Pay per lesson or for a block of lessons</li>
+            <li>PayID or bank transfer</li>
+            <li>Payment details sent when you book</li>
+            <li>Invoice provided for every payment</li>
+          </ul>
+        </div>
+        <div class="fee">
+          <span class="tag" style="background:var(--green)">Changes</span>
+          <h3>Cancelling or rescheduling</h3>
+          <ul>
+            <li>Please give at least 24 hours' notice</li>
+            <li>With 24 hours' notice, the lesson is moved or credited</li>
+            <li>Less notice means the lesson is charged</li>
+            <li>If I need to cancel, you get a free reschedule or a refund</li>
+          </ul>
+        </div>
       </div>
     </section>
 
@@ -318,6 +360,10 @@ footer { padding-block: 32px 40px; color: var(--muted); font-size: 0.9rem; displ
         <details>
           <summary>What should we bring to the first lesson?</summary>
           <p>The student's textbook, recent homework or test results, and any topics they're finding hard. That helps me plan lessons around what they actually need.</p>
+        </details>
+        <details>
+          <summary>How do I pay?</summary>
+          <p>Lessons are paid in advance by PayID or bank transfer. I'll send the payment details and an invoice when you book.</p>
         </details>
         <details>
           <summary>How much do lessons cost?</summary>
